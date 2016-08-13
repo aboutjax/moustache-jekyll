@@ -19,6 +19,11 @@ description: We’re a little milk and cookie bar with a huge passion for baking
 baseurl: "/moustache-jekyll" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 
+# Social handles
+facebook: moustachenz
+instagram: moustachenz
+twitter: moustachenz
+
 # Build settings
 markdown: kramdown
 gems: ['jekyll-github-metadata']
