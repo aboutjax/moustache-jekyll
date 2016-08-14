@@ -3,27 +3,25 @@ layout: default
 ---
 
 <div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
+  <ul class="stores">
+    <h1>Store json</h1>
     {% for store in site.data.stores %}
       <li>
         <h2>{{ store.name }} | {{ store.address }}</h2>
+
         <ul class="hours">
-          {% for day in store.hours %}
-            <li>{{ day.hours }}</li>
+          {% for test in store.hours %}
+          <li>{{ test[0] }}
+            {% if test[1].closed == true %}
+            <p>
+              closed
+            </p>
+            {% else %}
+               {{ test[1].open }}am, {{ test[1].close }}pm</li>
+            {% endif %}
           {% endfor %}
         </ul>
-        {% if store.hours.sunday.closed %}
-          closed
-        {% else %}
-          {{ store.hours.sunday.open }}, {{ store.hours.sunday.close }}
-        {% endif %}
       </li>
     {% endfor %}
   </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
 </div>

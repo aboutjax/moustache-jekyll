@@ -1,0 +1,90 @@
+[
+  {
+    "id":"01",
+    "type":"store",
+    "name":"Auckland",
+    "description":"Auckland",
+    "address":"32 Princess Street, AU Quad",
+    "hours": {
+      "sunday": {
+        "closed": true,
+        "open": "10",
+        "close": "7"
+      },
+      "monday": {
+        "closed": false,
+        "open": "10",
+        "close": "7"
+      },
+      "tuesday": {
+        "closed": false,
+        "open": "10",
+        "close": "7"
+      },
+      "wednesday": {
+        "closed": false,
+        "open": "10",
+        "close": "7"
+      },
+      "thursday": {
+        "closed": false,
+        "open": "10",
+        "close": "7"
+      },
+      "friday": {
+        "closed": false,
+        "open": "10",
+        "close": "7"
+      },
+      "saturday": {
+        "closed": false,
+        "open": "12",
+        "close": "6"
+      }
+    }
+  },
+  {
+    "id":"02",
+    "type":"store",
+    "name":"Wellington",
+    "description":"Wellinton",
+    "address":"7 Marion Street, Te Aro",
+    "hours": {
+      "sunday": {
+        "closed": false,
+        "open": "10",
+        "close": "6"
+      },
+      "monday": {
+        "closed": true,
+        "open": "10",
+        "close": "6"
+      },
+      "tuesday": {
+        "closed": false,
+        "open": "10",
+        "close": "6"
+      },
+      "wednesday": {
+        "closed": false,
+        "open": "10",
+        "close": "6"
+      },
+      "thursday": {
+        "closed": false,
+        "open": "10",
+        "close": "6"
+      },
+      "friday": {
+        "closed": false,
+        "open": "10",
+        "close": "6"
+      },
+      "saturday": {
+        "closed": false,
+        "open": "12",
+        "close": "6"
+      }
+    }
+  }
+]
