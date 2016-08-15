@@ -5,7 +5,7 @@ layout: default
 
   {% for store in site.data.stores %}
   <div class="c-outlet-card">
-    <img src="{{ store.illustration }}" class="c-outlet-card__illustration">
+    <img src="{{ store.illustration | prepend: site.baseurl}}" class="c-outlet-card__illustration">
     <div class="c-outlet-card__top">
       <h1 class="c-outlet-card__name">{{ store.name }}</h1>
       <h3 class="c-outlet-card__address">{{ store.address }}</h3>
