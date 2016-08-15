@@ -1,21 +1,17 @@
 <footer class="c-footer">
     <div class="l-grid-container">
-      <div class="c-footer__left">
-        <img class="c-footer__logo" src="assets/images/logo.svg" alt="logo" />
-        <p class="c-footer__description">We’re a little milk and cookie bar with a huge passion for baking the freshest and yummiest cookies around town. Team our cookies with delicious milkshakes, hot coffee or just dunk them in cold milk like the good ol’ days.</p>
+      {% include svg.html icon-name="logo" icon-class="c-footer__logo" %}
+      <div class="c-social-banner">
+        <a class="c-social-banner__link" href="https://facebook.com/{{ site.facebook }}">
+          {% include svg.html icon-name="facebook" icon-class="c-social-banner__icon" %}
+        </a>
+        <a class="c-social-banner__link" href="https://instagram.com/{{ site.instagram }}">
+          {% include svg.html icon-name="instagram" icon-class="c-social-banner__icon" %}
+        </a>
+        <a class="c-social-banner__link" href="https://twitter.com/{{ site.twitter }}">
+          {% include svg.html icon-name="twitter" icon-class="c-social-banner__icon" %}
+        </a>
       </div>
-      <div class="c-footer__right">
-        <div class="c-social-banner">
-          <a class="c-social-banner__link" href="https://facebook.com/{{ site.facebook }}">
-            {% include svg.html icon-name="facebook" icon-class="c-social-banner__icon" %}
-          </a>
-          <a class="c-social-banner__link" href="https://instagram.com/{{ site.instagram }}">
-            {% include svg.html icon-name="instagram" icon-class="c-social-banner__icon" %}
-          </a>
-          <a class="c-social-banner__link" href="https://twitter.com/{{ site.twitter }}">
-            {% include svg.html icon-name="twitter" icon-class="c-social-banner__icon" %}
-          </a>
-        </div>
-      </div>
+      <p class="c-footer__description">We’re a little milk and cookie bar with a huge passion for baking the freshest and yummiest cookies around town. Team our cookies with delicious milkshakes, hot coffee or just dunk them in cold milk like the good ol’ days.</p>
     </div>
 </footer>

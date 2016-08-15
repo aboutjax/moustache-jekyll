@@ -1,6 +1,8 @@
 .c-outlet-card {
   font-size: 1.6rem;
-  margin: 0 2rem;
+  margin: 0 1rem;
+  flex-basis: percentage(5/12);
+  min-width: 30rem;
   flex-grow: 1;
   background-color: $mo-white;
   border-radius: 3px;
@@ -10,7 +12,9 @@
   @include antialiased;
 
   @include mobile {
-   margin-bottom: 10rem;
+    &:first-of-type {
+      margin-bottom: 10rem;
+    }
   }
 
 }
@@ -63,8 +67,8 @@
   padding: 0 4rem;
   margin-top: 5rem;
   letter-spacing: 0;
-  font-size: 1.9rem;
-  font-weight: 100;
+  font-size: 1.6rem;
+  font-weight: 400;
   width: 100%;
 
   .hours {
