@@ -17,7 +17,7 @@ title: Moustache Milk & Cookies Bar
 email: holla@moustache.co.nz
 description: We’re a little milk and cookie bar with a huge passion for baking the freshest and yummiest cookies around town. Team our cookies with delicious milkshakes, hot coffee or just dunk them in cold milk like the good ol’ days.
 baseurl: "/moustache-jekyll" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+url: "http://moustache.co.nz" # the base hostname & protocol for your site
 
 # Social handles
 facebook: moustachenz
