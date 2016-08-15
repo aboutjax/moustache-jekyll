@@ -1,27 +1,28 @@
 ---
 layout: default
 ---
+<div class="l-homepage-outlets l-grid-container">
 
-<div class="home">
-  <ul class="stores">
-    <h1>Store json</h1>
-    {% for store in site.data.stores %}
-      <li>
-        <h2>{{ store.name }} | {{ store.address }}</h2>
+  {% for store in site.data.stores %}
+  <div class="c-outlet-card">
+    <img src="{{ store.illustration }}" class="c-outlet-card__illustration">
+    <div class="c-outlet-card__top">
+      <h1 class="c-outlet-card__name">{{ store.name }}</h1>
+      <h3 class="c-outlet-card__address">{{ store.address }}</h3>
+    </div>
+    <table class="c-outlet-card__hours">
+      {% for day in store.hours %}
+      <tr class="c-outlet-card__hours__row">
+        <td>{{ day[0] | capitalize}}</td>
+        {% if day[1].closed == true %}
+        <td class="hours">Closed</td>
+        {% else %}
+        <td class="hours">{{ day[1].open }}am - {{ day[1].close }}pm</td>
+        {% endif %}
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+  {% endfor %}
 
-        <ul class="hours">
-          {% for test in store.hours %}
-          <li>{{ test[0] }}
-            {% if test[1].closed == true %}
-            <p>
-              closed
-            </p>
-            {% else %}
-               {{ test[1].open }}am, {{ test[1].close }}pm</li>
-            {% endif %}
-          {% endfor %}
-        </ul>
-      </li>
-    {% endfor %}
-  </ul>
 </div>

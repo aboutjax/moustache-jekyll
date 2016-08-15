@@ -1,0 +1,27 @@
+{
+  "name": "moustache-jekyll",
+  "version": "1.0.0",
+  "description": "Moustache Jekyll Site",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-svg-sprite": "^1.3.4",
+    "remove-svg-properties": "^0.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aboutjax/moustache-jekyll.git"
+  },
+  "author": "Jacky Lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aboutjax/moustache-jekyll/issues"
+  },
+  "homepage": "https://github.com/aboutjax/moustache-jekyll#readme"
+}

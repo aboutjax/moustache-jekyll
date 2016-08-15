@@ -1,0 +1,20 @@
+{
+  "name": "moustache-jekyll",
+  "description": "Moustache Jekyll Site",
+  "main": "index.js",
+  "authors": [
+    "Jacky Lee"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/aboutjax/moustache-jekyll",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-scss": "normalize.scss#^5.0.3"
+  }
+}

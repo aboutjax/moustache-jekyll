@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+html {
+  @include mobile {
+    font-size: 10px;
+  };
+}
+
+:link,
+:visited {
+  text-decoration: underline;
+  color: inherit;
+
+  &:hover {
+    opacity: .8;
+  }
+}

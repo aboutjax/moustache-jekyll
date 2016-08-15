@@ -1,0 +1,20 @@
+.c-social-banner {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  @include mobile {
+    justify-content: flex-start;
+  }
+}
+
+.c-social-banner__link {
+  padding: 1rem 1rem;
+  display: flex;
+}
+
+.c-social-banner__icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}

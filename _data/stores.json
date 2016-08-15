@@ -4,11 +4,12 @@
     "type":"store",
     "name":"Auckland",
     "description":"Auckland",
+    "illustration": "assets/images/illustration-auckland.png",
     "address":"32 Princess Street, AU Quad",
     "hours": {
       "sunday": {
         "closed": true,
-        "open": "10",
+        "open": "1",
         "close": "7"
       },
       "monday": {
@@ -48,6 +49,7 @@
     "type":"store",
     "name":"Wellington",
     "description":"Wellinton",
+    "illustration": "assets/images/illustration-wellington.png",
     "address":"7 Marion Street, Te Aro",
     "hours": {
       "sunday": {

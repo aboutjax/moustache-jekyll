@@ -1,0 +1,29 @@
+.c-footer {
+  background-color: lighten($mo-brand, 5);
+  color: $mo-text;
+  padding: 5rem;
+}
+
+.c-footer__right {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-end;
+
+  @include mobile() {
+    justify-content: flex-start;
+  }
+}
+
+.c-footer__logo {
+  width: 14rem;
+}
+
+.c-footer__description {
+  font-size: 1.6rem;
+  max-width: 50rem;
+  line-height: 1.5;
+  opacity: 0.5;
+  margin-bottom: 3rem;
+}

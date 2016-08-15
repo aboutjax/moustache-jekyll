@@ -3,13 +3,17 @@
 
   {% include head.html %}
 
-  <body>
+  <body class="l-body--home">
+
+    {% include sprite/sprite.svg %}
+
     {% include header.html %}
 
     {{ content }}
 
+    {% include footer.html %}
+
   </body>
 
-  {% include footer.html %}
 
 </html>
