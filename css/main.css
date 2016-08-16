@@ -646,16 +646,12 @@ html {
   height: 3rem; }
 
 .c-outlet-card {
-  font-size: 1.6rem;
   margin: 0 1rem;
-  -webkit-flex-basis: 41.66667%;
-      -ms-flex-preferred-size: 41.66667%;
-          flex-basis: 41.66667%;
   min-width: 30rem;
   -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
   background-color: #FFFFFF;
   -webkit-border-radius: 3px;
           border-radius: 3px;

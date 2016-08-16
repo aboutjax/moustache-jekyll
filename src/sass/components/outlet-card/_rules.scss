@@ -1,9 +1,7 @@
 .c-outlet-card {
-  font-size: 1.6rem;
   margin: 0 1rem;
-  flex-basis: percentage(5/12);
   min-width: 30rem;
-  flex-grow: 1;
+  flex: 1 0 auto;
   background-color: $mo-white;
   border-radius: 3px;
   padding: 4rem 0;
