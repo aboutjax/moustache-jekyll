@@ -2,10 +2,10 @@
   {
     "id":"01",
     "type":"store",
-    "name":"Auckland CBD",
+    "name":"Auckland Uni",
     "description":"Auckland",
     "illustration": "/assets/images/illustration-auckland.png",
-    "address":"32 Princess Street, AU Quad",
+    "address":"34 Princes Street, AU Quad",
     "hours": {
       "sunday": {
         "closed": true,
@@ -84,7 +84,7 @@
       },
       "saturday": {
         "closed": false,
-        "open": "12",
+        "open": "10",
         "close": "6"
       }
     }
