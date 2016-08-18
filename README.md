@@ -1,11 +1,11 @@
 # moustache-jekyll
 Moustache Milk &amp; Cookie Jekyll Site
 
-# Installation
+### Installation
 `bower install`
 
-# Compilation
+### Compilation
 `gulp`
 
-# Run
+### Run
 `bundle exec jekyll serve`
