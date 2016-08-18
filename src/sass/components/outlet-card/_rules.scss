@@ -11,6 +11,7 @@
   box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1);
   @include antialiased;
   margin-bottom: 10rem;
+  min-height: 50rem;
 
   @include mobile {
     &:last-of-type {
@@ -47,6 +48,7 @@
 }
 
 .c-outlet-card__top {
+  width: 100%;
   padding-top: 4rem;
   border-bottom: 1px solid transparent;
   box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.03);

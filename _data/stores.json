@@ -2,7 +2,7 @@
   {
     "id":"01",
     "type":"store",
-    "name":"Auckland Uni",
+    "name":"Auckland CBD",
     "description":"Auckland",
     "illustration": "/assets/images/illustration-auckland.png",
     "address":"32 Princess Street, AU Quad",
@@ -47,8 +47,8 @@
   {
     "id":"02",
     "type":"store",
-    "name":"Wellington",
-    "description":"Wellinton",
+    "name":"Wellington CBD",
+    "description":"Wellington",
     "illustration": "/assets/images/illustration-wellington.png",
     "address":"7 Marion Street, Te Aro",
     "hours": {
