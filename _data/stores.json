@@ -2,7 +2,7 @@
   {
     "id":"01",
     "type":"store",
-    "name":"Auckland",
+    "name":"Auckland Uni",
     "description":"Auckland",
     "illustration": "/assets/images/illustration-auckland.png",
     "address":"32 Princess Street, AU Quad",
@@ -80,7 +80,7 @@
       "friday": {
         "closed": false,
         "open": "10",
-        "close": "6"
+        "close": "9"
       },
       "saturday": {
         "closed": false,
