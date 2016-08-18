@@ -770,6 +770,10 @@ html {
 .c-outlet-card__ampm {
   font-size: 1rem; }
 
+.c-outlet-card__email-icon {
+  width: 4rem;
+  height: 4rem; }
+
 .c-btn {
   display: inline-block;
   padding: 1.2rem 1.5rem;
