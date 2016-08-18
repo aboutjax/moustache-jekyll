@@ -1,20 +1,27 @@
 .c-outlet-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0 1rem;
+  width: 30rem;
   min-width: 30rem;
-  flex: 1 0 auto;
   background-color: $mo-white;
   border-radius: 3px;
-  padding: 4rem 0;
   position: relative;
   box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1);
   @include antialiased;
+  margin-bottom: 10rem;
 
   @include mobile {
-    &:first-of-type {
-      margin-bottom: 10rem;
+    &:last-of-type {
+      margin-bottom: 0rem;
     }
   }
+}
 
+.c-outlet-card__text {
+  text-align: center;
+  margin-top: 0;
 }
 
 .c-outlet-card__illustration {
@@ -23,13 +30,20 @@
   left: 0;
   width: 100%;
   opacity: 1;
-  transform: translateY(-90%);
+  left: 50%;
+  transform: translateX(-50%) translateY(-70%);
   animation: slide-fade-in 0.6s ease-in-out;
+
+  @include mobile {
+    width: 20rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(-70%);
+  }
 }
 
 @keyframes slide-fade-in {
-  from {transform: translateY(-85%); opacity: 0;}
-  to {transform: translateY(-90%); opacity: 1;}
+  from {transform: translateX(-50%) translateY(-45%); opacity: 0;}
+  to {transform: translateX(-50%) translateY(-70%); opacity: 1;}
 }
 
 .c-outlet-card__top {
@@ -44,7 +58,7 @@
 
 .c-outlet-card__name {
   text-transform: uppercase;
-  font-size: 2.9rem;
+  font-size: 2rem;
   font-weight: 400;
   text-align: center;
   margin-bottom: 1rem;
@@ -62,8 +76,7 @@
 }
 
 .c-outlet-card__hours {
-  padding: 0 4rem;
-  margin-top: 5rem;
+  padding: 4rem;
   letter-spacing: 0;
   font-size: 1.6rem;
   font-weight: 400;
@@ -72,4 +85,8 @@
   .hours {
     text-align: right;
   }
+}
+
+.c-outlet-card__ampm {
+  font-size: 1rem;
 }

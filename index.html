@@ -3,6 +3,8 @@ layout: default
 ---
 <div class="l-homepage-outlets l-grid-container">
 
+  {% include flagship-store.html %}
+
   {% for store in site.data.stores %}
   <div class="c-outlet-card">
     <img src="{{ store.illustration | prepend: site.url }}" class="c-outlet-card__illustration">
@@ -17,7 +19,7 @@ layout: default
         {% if day[1].closed == true %}
         <td class="hours">Closed</td>
         {% else %}
-        <td class="hours">{{ day[1].open }}am - {{ day[1].close }}pm</td>
+        <td class="hours">{{ day[1].open }}<span class="c-outlet-card__ampm">am</span> - {{ day[1].close }}<span class="c-outlet-card__ampm">pm</span></td>
         {% endif %}
       </tr>
       {% endfor %}
