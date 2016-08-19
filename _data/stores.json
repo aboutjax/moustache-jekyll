@@ -14,33 +14,33 @@
       },
       "monday": {
         "closed": false,
-        "open": "10",
-        "close": "7"
+        "open": "10am",
+        "close": "7pm"
       },
       "tuesday": {
         "closed": false,
-        "open": "10",
-        "close": "7"
+        "open": "10am",
+        "close": "7pm"
       },
       "wednesday": {
         "closed": false,
-        "open": "10",
-        "close": "7"
+        "open": "10am",
+        "close": "7pm"
       },
       "thursday": {
         "closed": false,
-        "open": "10",
-        "close": "7"
+        "open": "10am",
+        "close": "7pm"
       },
       "friday": {
         "closed": false,
-        "open": "10",
-        "close": "7"
+        "open": "10am",
+        "close": "7pm"
       },
       "saturday": {
         "closed": false,
-        "open": "12",
-        "close": "6"
+        "open": "12pm",
+        "close": "6pm"
       }
     }
   },
@@ -54,8 +54,8 @@
     "hours": {
       "sunday": {
         "closed": false,
-        "open": "10",
-        "close": "6"
+        "open": "10am",
+        "close": "6pm"
       },
       "monday": {
         "closed": true,
@@ -64,28 +64,28 @@
       },
       "tuesday": {
         "closed": false,
-        "open": "10",
-        "close": "6"
+        "open": "10am",
+        "close": "6pm"
       },
       "wednesday": {
         "closed": false,
-        "open": "10",
-        "close": "6"
+        "open": "10am",
+        "close": "6pm"
       },
       "thursday": {
         "closed": false,
-        "open": "10",
-        "close": "6"
+        "open": "10am",
+        "close": "6pm"
       },
       "friday": {
         "closed": false,
-        "open": "10",
-        "close": "9"
+        "open": "10am",
+        "close": "9pm"
       },
       "saturday": {
         "closed": false,
-        "open": "10",
-        "close": "6"
+        "open": "10am",
+        "close": "6pm"
       }
     }
   }

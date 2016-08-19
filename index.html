@@ -19,7 +19,7 @@ layout: default
         {% if day[1].closed == true %}
         <td class="hours">Closed</td>
         {% else %}
-        <td class="hours">{{ day[1].open }}<span class="c-outlet-card__ampm">am</span> - {{ day[1].close }}<span class="c-outlet-card__ampm">pm</span></td>
+        <td class="hours">{{ day[1].open }} - {{ day[1].close }}</td>
         {% endif %}
       </tr>
       {% endfor %}
