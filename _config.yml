@@ -27,3 +27,4 @@ twitter: moustachenz
 # Build settings
 markdown: kramdown
 gems: ['jekyll-github-metadata']
+exclude: [node_modules, bower_components, src]
