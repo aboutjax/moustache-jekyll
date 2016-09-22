@@ -1,0 +1,10 @@
+// Spacing
+// ---------------------------
+
+$base-spacing-unit: 1rem !default; // 16px
+$spacing-grid: 2rem !default;
+
+$spacing: $base-spacing-unit;
+
+$border: 1px solid $framing;
+$border-radius: .5rem;

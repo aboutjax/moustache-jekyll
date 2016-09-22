@@ -1,0 +1,14 @@
+.l-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.l-grid {
+  &__container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: stretch;
+  }
+}

@@ -5,9 +5,10 @@ $base-font-size: 10px;
 @import "normalize-scss/sass/normalize/import-now";
 
 // Project
-@import "sass/helpers/mixins";
-@import "sass/base/colours";
-@import "sass/base/responsive";
-@import "sass/base/base";
-@import "sass/layouts/layouts";
-@import "sass/components/components";
+@import 'sass/settings/index';
+@import 'sass/tools/index';
+
+@import 'sass/generic/index';
+@import 'sass/elements/index';
+@import 'sass/objects/index';
+@import 'sass/components/index';

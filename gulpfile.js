@@ -13,7 +13,7 @@ var svgSprite = require('gulp-svg-sprite');
    bowerDir: './bower_components'
  }
 gulp.task('sass', function () {
-    return gulp.src('./src/*.scss')
+    return gulp.src('./src/**/*.scss')
         .pipe(sass({
           includePaths: [
             config.bowerDir

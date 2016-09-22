@@ -2,16 +2,19 @@
 <html>
 
   {% include head.html %}
+  {% include sprite/sprite.svg %}
 
-  <body class="l-body--home">
+  <body class="l-grid__container">
 
-    {% include sprite/sprite.svg %}
 
-    {% include header.html %}
+    {% include nav.html %}
 
-    {{ content }}
+    <div>
 
-    {% include footer.html %}
+      {{ content }}
+
+    </div>
+
 
   </body>
 

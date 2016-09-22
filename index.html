@@ -1,30 +1,12 @@
 ---
 layout: default
 ---
-<div class="l-homepage-outlets l-grid-container">
-
-  {% include flagship-store.html %}
-
-  {% for store in site.data.stores %}
-  <div class="c-outlet-card">
-    <img src="{{ store.illustration | prepend: site.url }}" class="c-outlet-card__illustration">
-    <div class="c-outlet-card__top">
-      <h1 class="c-outlet-card__name">{{ store.name }}</h1>
-      <h3 class="c-outlet-card__address">{{ store.address }}</h3>
-    </div>
-    <table class="c-outlet-card__hours">
-      {% for day in store.hours %}
-      <tr class="c-outlet-card__hours__row">
-        <td>{{ day[0] | capitalize}}</td>
-        {% if day[1].closed == true %}
-        <td class="hours">Closed</td>
-        {% else %}
-        <td class="hours">{{ day[1].open }} - {{ day[1].close }}</td>
-        {% endif %}
-      </tr>
-      {% endfor %}
-    </table>
-  </div>
-  {% endfor %}
-
-</div>
+{% for cookie in site.data.cookies %}
+{% assign shopify_name = cookie.shopify_product_name %}
+{% assign shopify_handle = cookie.shopify_product_handle %}
+<li>
+  <h1>{{cookie.name}}</h1>
+  <h2>{{cookie.price}}</h2>
+  {% include shopify_buttons/button.html name=shopify_name handle=shopify_handle %}
+</li>
+{% endfor %}

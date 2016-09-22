@@ -1,0 +1,54 @@
+<body bgcolor="#eeebeb">
+<table width="650" border="0" cellpadding="0" cellspacing="0" style="margin: 0 auto;">
+	<tr>
+		<td width="650" height="192" colspan="6" style="font-family: Helvetica, Arial, sans-serif; text-transform: uppercase; font-size: 11px;letter-spacing: 1px; font-weight: bold; color: #000; text-align: center;"><a href="http://www.moustache.co.nz" target="_blank"><img src="http://cdn.shopify.com/s/files/1/0294/0449/files/Moustache-Email-Header.jpg?1863" alt="Nom Nom" width="650" height="192" border="0" /></a></td>
+	</tr>
+	<tr>
+		<td width="51" height="59" style="background: #f5e8cd;"></td>
+		<td width="220" height="59" colspan="2" style="background: #f5e8cd; font-family: Helvetica, Arial, sans-serif; text-transform: uppercase; font-size: 11px;letter-spacing: 1px; font-weight: bold; color: #000; text-align: center;"><a href="http://www.moustache.co.nz" target="_blank"><img src="http://cdn.shopify.com/s/files/1/0294/0449/files/Moustache-Email-Logo.jpg?1863" alt="MOUSTACHE" width="220" height="59" border="0" /></a></td>
+		<td width="379" height="59" colspan="3" style="background: #f5e8cd; font-family: Helvetica, Arial, sans-serif; text-transform: uppercase; font-size: 11px;letter-spacing: 1px; font-weight: bold; padding-top: 12px;"><ul><li style="display: inline; margin-right: 20px;"><a href="http://shop.moustache.co.nz/collections/cookies-noms" title="Cookies &amp; Noms" target="_blank" style="color: #000; text-decoration: none;">Cookies &amp; Noms</a></li><li style="display: inline; margin-right: 20px;"><a href="http://shop.moustache.co.nz/pages/catering" title="Catering" target="_blank" style="color: #000; text-decoration: none;">Catering</a></li><li style="display: inline;"><a href="http://shop.moustache.co.nz/pages/about-us" title="About Us" target="_blank" style="color: #000; text-decoration: none;">About Us</a></li></ul></td>
+	</tr>
+	<tr>
+    <td width="51" colspan="1" style="background: #fff;"></td>
+		<td width="548" colspan="4" style="background: #fff; padding-top: 51px; padding-bottom: 50px; font-family: Helvetica, Arial, sans-serif; font-size: 12px; letter-spacing: 0.1em;line-height: 18px;" valign="top">
+
+        <h2 style="font-size: 18px; text-transform: uppercase; text-align: center;margin-bottom: 30px;">Shipping Update</h2>
+
+{% if billing_address.name %}
+<p>Dear {{ billing_address.name }},</p>
+{% endif %}
+
+<p>The following shipped items from <strong>order {{ name }}</strong> have been updated with new shipping information:</p>
+
+<table width="100%" style="border-top: 1px solid #000;" cellpadding="0" cellspacing="0">
+  {% for line in fulfillment.fulfillment_line_items %}<tr><td valign="middle" style="border-bottom: 1px solid #000;padding-top: 10px; padding-bottom: 10px;" width="95"><img src="{{ line.product.featured_image | product_img_url: 'small' }}" height="75" /></td><td valign="middle" style="font-weight: bold; font-size: 12px; border-bottom: 1px solid #000; ">
+    {{ line.quantity }} x {{ line.line_item.title }}
+</td></tr> {% endfor %}
+</table>
+
+<p>They are being shipped{% if fulfillment.tracking_company %} via {{ fulfillment.tracking_company }}{% endif %} with tracking number {{ fulfillment.tracking_number }}. <a href="{{ fulfillment.tracking_url }}">Click here to see the status of this shipment</a>.</p>
+
+<p>Please allow some time for the status of the shipment to correctly display at the above address.</p>
+
+</td>
+    <td width="51" colspan="1" style="background: #fff;"></td>
+	</tr>
+	<tr>
+		<td width="53" height="109" colspan="2" style="background: #f5e8cd;"></td>
+		<td width="341" height="109" colspan="2" style="background: #f5e8cd;padding-top: 28px; font-family: Helvetica, Arial, sans-serif; font-size: 11px;line-height: 16px;" valign="top"><a href="http://www.moustache.co.nz" target="_blank"><img src="http://cdn.shopify.com/s/files/1/0294/0449/files/Moustache-Title.jpg?1863" alt="Moustache Milk &amp; Cookie Bar" width="273" height="15" border="0" style="margin-bottom: 5px;"/></a><br />
+		  12 Wellesley Street West, Auckland AUK New Zealand 1010<br />
+<b><a href="http://www.moustache.co.nz" title="Moustache" target="_blank" style="color: #000; text-decoration: none;">www.moustache.co.nz</a></b></td>
+		<td width="204" height="109" style="background: #f5e8cd;padding-top: 28px; font-family: Helvetica, Arial, sans-serif; font-size: 11px;line-height: 16px; text-align: right;" valign="top"><img src="http://cdn.shopify.com/s/files/1/0294/0449/files/Follow-Us.jpg?1863" alt="Follow Us" width="107" height="15"/><br />
+	    <a href="https://www.facebook.com/MoustacheNZ" target="_blank"><img src="http://cdn.shopify.com/s/files/1/0294/0449/files/Facebook.jpg?1863" alt="Facebook" width="44" height="31" border="0"/></a><a href="https://twitter.com/MoustacheNZ" target="_blank"><img src="http://cdn.shopify.com/s/files/1/0294/0449/files/Twitter.jpg?1863" alt="Twitter" width="39" height="31" border="0"/></a><a href="http://www.youtube.com/channel/UCJUMGRZbxTmrf9Z41Rn5oZg?feature=watch" target="_blank"><img src="http://cdn.shopify.com/s/files/1/0294/0449/files/Youtube.jpg?1863" alt="Youtube" width="36" height="31" border="0"/></a><a href="http://instagram.com/moustachenz" target="_blank"><img src="http://cdn.shopify.com/s/files/1/0294/0449/files/Instagram.jpg?1863" alt="Instagram" width="32" height="31" border="0"/></a></td>
+		<td width="52" height="109" style="background: #f5e8cd;"></td>
+	</tr>
+	<tr>
+		<td width="51" height="1"></td>
+		<td width="2" height="1"></td>
+		<td width="218" height="1"></td>
+		<td width="123" height="1"></td>
+		<td width="204" height="1"></td>
+		<td width="52" height="1"></td>
+	</tr>
+</table>
+</body>
