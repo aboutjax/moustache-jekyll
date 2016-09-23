@@ -1,14 +1,62 @@
 .l-grid {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.l-grid {
-  &__container {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: stretch;
-  }
+
+    &__1  { width: percentage(1/12);  }
+    &__2  { width: percentage(2/12);  }
+    &__3  { width: percentage(3/12);  }
+    &__4  { width: percentage(4/12);  }
+    &__5  { width: percentage(5/12);  }
+    &__6  { width: percentage(6/12);  }
+    &__7  { width: percentage(7/12);  }
+    &__8  { width: percentage(8/12);  }
+    &__9  { width: percentage(9/12);  }
+    &__10 { width: percentage(10/12); }
+    &__11 { width: percentage(11/12); }
+    &__12 { width: percentage(12/12); }
+
+    &__push-1  { margin-left: percentage(1/12);  }
+    &__push-2  { margin-left: percentage(2/12);  }
+    &__push-3  { margin-left: percentage(3/12);  }
+    &__push-4  { margin-left: percentage(4/12);  }
+    &__push-5  { margin-left: percentage(5/12);  }
+    &__push-6  { margin-left: percentage(6/12);  }
+    &__push-7  { margin-left: percentage(7/12);  }
+    &__push-8  { margin-left: percentage(8/12);  }
+    &__push-9  { margin-left: percentage(9/12);  }
+    &__push-10 { margin-left: percentage(10/12); }
+    &__push-11 { margin-left: percentage(11/12); }
+    &__push-12 { margin-left: percentage(12/12); }
+
+    @include medium {
+        &__md-1  { width: percentage(1/12);  }
+        &__md-2  { width: percentage(2/12);  }
+        &__md-3  { width: percentage(3/12);  }
+        &__md-4  { width: percentage(4/12);  }
+        &__md-5  { width: percentage(5/12);  }
+        &__md-6  { width: percentage(6/12);  }
+        &__md-7  { width: percentage(7/12);  }
+        &__md-8  { width: percentage(8/12);  }
+        &__md-9  { width: percentage(9/12);  }
+        &__md-10 { width: percentage(10/12); }
+        &__md-11 { width: percentage(11/12); }
+        &__md-12 { width: percentage(12/12); }
+    }
+
+    @include small {
+        &__sm-1  { width: percentage(1/12);  }
+        &__sm-2  { width: percentage(2/12);  }
+        &__sm-3  { width: percentage(3/12);  }
+        &__sm-4  { width: percentage(4/12);  }
+        &__sm-5  { width: percentage(5/12);  }
+        &__sm-6  { width: percentage(6/12);  }
+        &__sm-7  { width: percentage(7/12);  }
+        &__sm-8  { width: percentage(8/12);  }
+        &__sm-9  { width: percentage(9/12);  }
+        &__sm-10 { width: percentage(10/12); }
+        &__sm-11 { width: percentage(11/12); }
+        &__sm-12 { width: percentage(12/12); }
+    }
 }

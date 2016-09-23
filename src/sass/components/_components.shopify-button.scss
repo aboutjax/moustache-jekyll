@@ -1,0 +1,12 @@
+.c-shopify-button {
+    display: flex;
+    position: relative; // This is to override the styles inheritted from shopify
+
+    @include small {
+        transform: translateX(22%);
+    }
+
+    @include smallish {
+        transform: translateX(25%);
+    }
+}

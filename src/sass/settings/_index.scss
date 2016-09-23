@@ -2,8 +2,10 @@
 // Colors base..........Our base colour palette.
 // Global...............Globally-available variables for spacing, transitions, etc.
 // Typography...........Typographic settings.
+// Animation............Animation settings.
 
 @import "settings.colors.base";
 @import "settings.colors.interface";
 @import "settings.global";
 @import "settings.typography";
+@import "settings.animation";

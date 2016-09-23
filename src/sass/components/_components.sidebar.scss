@@ -1,0 +1,54 @@
+.c-sidebar {
+    width: $side-bar-width;
+    background-color: $colour-brand;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    transition: left $transition-duration ease-in-out;
+
+    @include small {
+        left: - $side-bar-width;
+    }
+
+    @include smallish {
+        left: - $side-bar-width;
+    }
+
+    @include medium {
+        left: 0;
+    }
+}
+
+.c-sidebar__logo {
+    width: 15rem;
+}
+
+.c-sidebar__nav {
+    margin-top: $spacing * 4;
+    display: flex;
+    flex-flow: column;
+}
+
+.c-sidebar__nav-link {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    line-height: 5;
+    text-decoration: none;
+    color: $colour-text;
+    text-align: center;
+    border-top: 1px solid darken($colour-brand, 10);
+    font-weight: bold;
+
+    & + & {
+        border-bottom: 1px solid darken($colour-brand, 10);
+    }
+
+    &:hover {
+        color: $colour-primary;
+    }
+}

@@ -1,0 +1,62 @@
+.c-product-card {
+    flex-grow: 1;
+    max-height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    transition: background $transition-duration ease-in-out;
+
+    &:hover {
+        background: darken($colour-background, 2);
+    }
+
+    @include small {
+        width: percentage(1/2);
+        min-height: 70vh;
+    };
+
+    @include smallish {
+        width: percentage(1/2);
+        min-height: 40vh;
+    };
+
+    @include xxlarge {
+        width: percentage(1/4);
+        min-height: 50vh;
+    };
+
+    &:last-child {
+        flex-grow: 0;
+    }
+}
+
+.c-product-card__image {
+    max-width: 20rem;
+}
+
+.c-product-card__meta {
+    display: flex;
+    flex-direction: column;
+}
+
+.c-product-card__title {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: $spacing;
+    letter-spacing: .05rem;
+}
+
+.c-product-card__dollar-sign {
+    font-size: 1.5rem;
+    position: relative;
+    bottom: .5rem;
+    margin-right: .5rem;
+}
+
+.c-product-card__price {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 100;
+}

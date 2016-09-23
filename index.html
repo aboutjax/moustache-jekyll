@@ -1,12 +1,17 @@
 ---
 layout: default
 ---
-{% for cookie in site.data.cookies %}
-{% assign shopify_name = cookie.shopify_product_name %}
-{% assign shopify_handle = cookie.shopify_product_handle %}
-<li>
-  <h1>{{cookie.name}}</h1>
-  <h2>{{cookie.price}}</h2>
-  {% include shopify_buttons/button.html name=shopify_name handle=shopify_handle %}
-</li>
-{% endfor %}
+<div class="l-grid l-home-product-grid">
+    {% for cookie in site.data.cookies %}
+    {% assign shopify_name = cookie.shopify_product_name %}
+    {% assign shopify_handle = cookie.shopify_product_handle %}
+    <div class="c-product-card">
+        <img class="c-product-card__image" src="{{cookie.image}}" alt="product photo">
+        <div class="c-product-card__meta">
+            <h3 class="c-product-card__title">{{cookie.name}}</h3>
+            <h1 class="c-product-card__price"><span class="c-product-card__dollar-sign">$</span>{{cookie.price}}</h1>
+            {% include shopify_buttons/button.html name=shopify_name handle=shopify_handle %}
+        </div>
+        </div>
+    {% endfor %}
+</div>

@@ -1,5 +1,28 @@
 html,
 body {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
+    background: $colour-background;
+}
+
+html {
+    @include small {
+        font-size: 8px;
+    }
+}
+
+body {
+    color: $colour-text;
+    font-size: $t-base-size;
+    font-family: $t-font-family-default;
+    line-height: $t-base-line-height;
+    transition: padding-left $transition-duration ease-in-out;
+
+    @include smallish {
+        padding-left: 0;
+    }
+
+    @include medium {
+        padding-left: $side-bar-width;
+    }
 }

@@ -1,22 +1,17 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
-  {% include sprite/sprite.svg %}
+    {% include head.html %}
 
-  <body class="l-grid__container">
+    {% include sprite/sprite.svg %}
+    <body>
 
-
-    {% include nav.html %}
-
-    <div>
-
-      {{ content }}
-
-    </div>
+        {% include sidebar.html %}
 
 
-  </body>
+        {{ content }}
+
+    </body>
 
 
 </html>

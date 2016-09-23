@@ -56,12 +56,13 @@ gulp.task('svg', function() {
   .pipe(gulp.dest("_includes/"))
 });
 
-/**
-* Watch scss files for changes & recompile
-* Watch html/md files, run jekyll & reload BrowserSync
-*/
+gulp.task('js', function() {
+    gulp.src('./src/js/*.js')
+    .pipe(gulp.dest('./js'))
+});
+
 gulp.task('watch', function () {
   gulp.watch('src/sass/**/*.scss', ['sass']);
 });
 
-gulp.task('default', ['sass', 'watch', 'svg']);
+gulp.task('default', ['sass', 'js', 'watch', 'svg']);
