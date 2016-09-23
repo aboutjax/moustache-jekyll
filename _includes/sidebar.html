@@ -4,7 +4,8 @@
   </a>
   {% include shopify_buttons/cart.html %}
   <nav class="c-sidebar__nav">
-      <a href="#" class="c-sidebar__nav-link">shop</a>
-      <a href="#" class="c-sidebar__nav-link">locations & hours</a>
+      <a href="{{ site.baseurl }}/" class="c-sidebar__nav-link">shop</a>
+      <a href="{{ site.baseurl }}/locations" class="c-sidebar__nav-link">locations & hours</a>
+      <a href="{{ site.baseurl }}/about" class="c-sidebar__nav-link {% if page.url == '/about.html' %} active {% endif %}">about</a>
   </nav>
 </div>

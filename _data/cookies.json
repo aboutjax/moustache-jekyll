@@ -3,7 +3,7 @@
     "id":"01",
     "name":"choc chunk",
     "description":"Ah the classic chocolate chunk. The quintessential cookie for dunking into a glass of cold milk. But this aint yo’ usual choco chunk cookie. We believe a good choc chunk has to have high quality chocolate and lots of it. So we only use big chunks of Whittaker’s chocolate & bake it so it’s crunchy on the outside but soft & chewy on the inside.",
-    "image":"/assets/images/products/black-forest.png",
+    "image":"/assets/images/products/choc-chunk.png",
     "favourite": true,
     "price":"3.50",
     "illustration": "http://placehold.it/100",
@@ -13,7 +13,7 @@
   {
     "id":"02",
     "name":"cinnamon",
-    "image":"/assets/images/products/black-forest.png",
+    "image":"/assets/images/products/cinnamon.png",
     "description":"The underdog of the cookie world. Whilst it may look plain, it is a staff favourite. This cookie tastes like a cinnamon donut, Easter & happiness all rolled into one. Soft, chewy and fluffy in texture, it works a treat with a cup of coffee or tea. ",
     "favourite": true,
     "price":"3.50",
@@ -24,7 +24,7 @@
   {
     "id":"03",
     "name":"snickers bar",
-    "image":"/assets/images/products/black-forest.png",
+    "image":"/assets/images/products/snickers.png",
     "description":"We managed to shove half a Snickers Bar in this cookie to form a chewy, nougaty, caramelly, nutty and incredibly popular cookie. You won’t want to share this one so make sure you get more than one.",
     "favourite": false,
     "price":"3.50",
@@ -46,7 +46,7 @@
   {
     "id":"05",
     "name":"nutella",
-    "image":"/assets/images/products/black-forest.png",
+    "image":"/assets/images/products/nutella.png",
     "description":"If you love Nutella, you’ll love this cookie. We pipe the smooth chocolate hazelnut spread into the centre of each cookie & top it off with crunchy hazelnuts.",
     "favourite": false,
     "price":"3.50",
@@ -79,7 +79,7 @@
   {
     "id":"08",
     "name":"White Choc Macadamia",
-    "image":"/assets/images/products/black-forest.png",
+    "image":"/assets/images/products/white-choc-macadamia.png",
     "description":"What separates this white chocolate macadamia cookie from the others out there is how jam-packed it is with quality ingredients. Cheap chocolate and tiny little crumbs of macadamia? Forget it. We only use wonderful Whittakers White chocolate and large macadamia halves.",
     "favourite": false,
     "price":"3.50",

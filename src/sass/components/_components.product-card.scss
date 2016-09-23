@@ -10,6 +10,11 @@
 
     &:hover {
         background: darken($colour-background, 2);
+
+        .c-product-card__image {
+            -webkit-filter: drop-shadow(0 5px 20px rgba(0, 0, 0, 0.4));
+            top: -1rem;
+        }
     }
 
     @include small {
@@ -34,6 +39,10 @@
 
 .c-product-card__image {
     max-width: 20rem;
+    -webkit-filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.2));
+    transition: all $transition-duration ease-in-out;
+    position: relative;
+    top: 0;
 }
 
 .c-product-card__meta {

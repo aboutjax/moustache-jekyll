@@ -1,14 +1,15 @@
 .c-sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 9;
     width: $side-bar-width;
     background-color: $colour-brand;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: fixed;
-    left: 0;
-    top: 0;
-    bottom: 0;
     transition: left $transition-duration ease-in-out;
 
     @include small {
@@ -32,23 +33,30 @@
     margin-top: $spacing * 4;
     display: flex;
     flex-flow: column;
+    width: 100%;
 }
 
 .c-sidebar__nav-link {
     font-size: 1.4rem;
     text-transform: uppercase;
-    line-height: 5;
+    line-height: 3;
     text-decoration: none;
     color: $colour-text;
     text-align: center;
-    border-top: 1px solid darken($colour-brand, 10);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     font-weight: bold;
+    cursor: pointer;
 
     & + & {
-        border-bottom: 1px solid darken($colour-brand, 10);
+        border-top: 0;
     }
 
     &:hover {
+        color: $colour-primary;
+    }
+
+    &.active {
         color: $colour-primary;
     }
 }
