@@ -13,6 +13,10 @@
 
     @include medium {
         padding: 2rem;
-        font-size: 1.8rem;
+        font-size: 2.4rem;
+    }
+
+    @include large {
+        font-size: 3.5rem;
     }
 }

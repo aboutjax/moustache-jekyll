@@ -887,7 +887,10 @@ a {
   @media only screen and (min-width: 768px) {
     .l-about-paragraph {
       padding: 2rem;
-      font-size: 1.8rem; } }
+      font-size: 2.4rem; } }
+  @media only screen and (min-width: 1024px) {
+    .l-about-paragraph {
+      font-size: 3.5rem; } }
 
 .c-header {
   position: fixed;
@@ -951,7 +954,12 @@ a {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 2rem;
-  width: 40rem;
+  max-width: 50rem;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 30rem;
   min-width: 30rem;
   background-color: #FFFFFF;
   -webkit-border-radius: 3px;
