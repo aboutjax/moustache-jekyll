@@ -1,0 +1,10 @@
+.l-home-product-grid {
+
+    @include small {
+        padding-top: $header-height;
+    };
+
+    @include medium {
+        padding-top: 0;
+    };
+}

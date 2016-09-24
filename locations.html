@@ -1,0 +1,27 @@
+---
+layout: default
+url: /locations
+---
+<div class="l-grid l-locations-wrapper">
+    {% for store in site.data.stores %}
+    <div class="c-outlet-card">
+        <img src="{{ store.illustration | prepend: site.url }}" class="c-outlet-card__illustration">
+        <div class="c-outlet-card__top">
+            <h1 class="c-outlet-card__name">{{ store.name }}</h1>
+            <h3 class="c-outlet-card__address">{{ store.address }}</h3>
+        </div>
+        <table class="c-outlet-card__hours">
+            {% for day in store.hours %}
+            <tr class="c-outlet-card__hours__row">
+                <td>{{ day[0] | capitalize}}</td>
+                {% if day[1].closed == true %}
+                <td class="hours">Closed</td>
+                {% else %}
+                <td class="hours">{{ day[1].open }} - {{ day[1].close }}</td>
+                {% endif %}
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+    {% endfor %}
+</div>

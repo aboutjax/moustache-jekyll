@@ -1,0 +1,16 @@
+.l-about-paragraph-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+
+    @include small {
+        padding-top: $header-height;
+    };
+
+    @include medium {
+        padding-top: 0;
+    };
+}

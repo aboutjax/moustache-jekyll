@@ -3,7 +3,7 @@
     left: 0;
     top: 0;
     bottom: 0;
-    z-index: 9;
+    z-index: 10;
     width: $side-bar-width;
     background-color: $colour-brand;
     display: flex;
@@ -16,12 +16,13 @@
         left: - $side-bar-width;
     }
 
-    @include smallish {
-        left: - $side-bar-width;
-    }
-
     @include medium {
         left: 0;
+    }
+
+    &.open {
+        left: 0;
+        width: 100%;
     }
 }
 
@@ -58,5 +59,19 @@
 
     &.active {
         color: $colour-primary;
+    }
+}
+
+.c-sidebar__close-icon {
+    width: 1.8rem;
+    height: 1.8rem;
+    fill: $colour-text;
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    display: block;
+
+    @include medium {
+        display: none;
     }
 }

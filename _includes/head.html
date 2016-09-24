@@ -11,7 +11,6 @@
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | prepend: site.url }}">
 
-    <script src="js/app.js" charset="utf-8"></script>
 
     <!-- Facebook Open Graph -->
     <meta property="og:title" content="{{ site.title }}" />
@@ -31,5 +30,11 @@
         ga('create', 'UA-48474634-5', 'auto');
         ga('send', 'pageview');
     </script>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Shopify Buy SDK -->
+    <script src="http://sdks.shopifycdn.com/js-buy-sdk/latest/shopify-buy.polyfilled.globals.min.js"></script>
 
 </head>

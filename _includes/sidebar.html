@@ -1,11 +1,13 @@
-<div class="c-sidebar">
-  <a href="{{ site.baseurl }}/">
+<div id="sidebar" class="c-sidebar">
+    <a id="sidebar-close-link" href="#">
+      {% include svg.html icon-name="close" icon-class="c-sidebar__close-icon" %}
+    </a>
+    <a href="{{ site.baseurl }}/">
     {% include svg.html icon-name="logo" icon-class="c-sidebar__logo" %}
-  </a>
-  {% include shopify_buttons/cart.html %}
-  <nav class="c-sidebar__nav">
-      <a href="{{ site.baseurl }}/" class="c-sidebar__nav-link {% if page.url == '/' %} active {% endif %}">cookie shop</a>
-      <a href="{{ site.baseurl }}/locations" class="c-sidebar__nav-link">locations & hours</a>
-      <a href="{{ site.baseurl }}/about" class="c-sidebar__nav-link {% if page.url == '/about.html' %} active {% endif %}">about</a>
-  </nav>
+    </a>
+    <nav class="c-sidebar__nav">
+          <a href="{{ site.baseurl }}/" class="c-sidebar__nav-link {% if page.url == '/' %} active {% endif %}">cookie shop</a>
+          <a href="{{ site.baseurl }}/locations" class="c-sidebar__nav-link {% if page.url == '/locations.html' %} active {% endif %}">locations & hours</a>
+          <a href="{{ site.baseurl }}/about" class="c-sidebar__nav-link {% if page.url == '/about.html' %} active {% endif %}">about</a>
+    </nav>
 </div>

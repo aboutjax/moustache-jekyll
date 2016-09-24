@@ -57,7 +57,7 @@
   {
     "id":"06",
     "name":"Oreo Marshmallow",
-    "image":"/assets/images/products/black-forest.png",
+    "image":"/assets/images/products/oreo-marshmallow.png",
     "description":"Melted marshmallow on the inside with crunchy marshmallow & crushed oreos on the outside. The cookie dough is made using premium Dutch cocoa that is produced in Holland from the finest West African Cocoa beans. It gives off a bittersweet taste & a deep rich chocolate colour.",
     "favourite": false,
     "price":"3.50",
@@ -89,13 +89,24 @@
   },
   {
     "id":"09",
-    "name":"Test Product",
-    "image":"/assets/images/products/black-forest.png",
-    "description":"What separates this white chocolate macadamia cookie from the others out there is how jam-packed it is with quality ingredients. Cheap chocolate and tiny little crumbs of macadamia? Forget it. We only use wonderful Whittakers White chocolate and large macadamia halves.",
+    "name":"Cookie Cake",
+    "image":"",
+    "description":"",
     "favourite": false,
     "price":"3.50",
     "illustration": "http://placehold.it/100",
-    "shopify_product_name": "test product",
-    "shopify_product_handle": "test-product"
-  }
+    "shopify_product_name": "Cookie Cake",
+    "shopify_product_handle": "cookie-cake-1"
+},
+  {
+    "id":"10",
+    "name":"Giant Cookie",
+    "image":"",
+    "description":"",
+    "favourite": false,
+    "price":"3.50",
+    "illustration": "http://placehold.it/100",
+    "shopify_product_name": "Giant Cookie",
+    "shopify_product_handle": "giant-cookie"
+}
 ]

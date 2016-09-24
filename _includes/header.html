@@ -1,7 +1,9 @@
 <header class="c-header">
-  <div class="l-grid-container c-header__container">
     <a href="{{ site.baseurl }}/">
-      {% include svg.html icon-name="logo" icon-class="c-header__logo" %}
+        {% include svg.html icon-name="moustache-mark" icon-class="c-header__logo" %}
     </a>
-  </div>
+    <a id="menu-link" class="c-header__menu-link" href="#">menu</a>
+    <div class="c-header__cart-button">
+        {% include shopify_buttons/cart.html %}
+    </div>
 </header>
