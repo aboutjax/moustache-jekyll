@@ -60,6 +60,10 @@
     &.active {
         color: $colour-primary;
     }
+
+    @include small {
+        line-height: 4;
+    };
 }
 
 .c-sidebar__close-icon {
