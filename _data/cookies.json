@@ -108,5 +108,15 @@
     "illustration": "http://placehold.it/100",
     "shopify_product_name": "Giant Cookie",
     "shopify_product_handle": "giant-cookie"
-}
+},{
+    "id":"11",
+    "name":"Test Product",
+    "image":"",
+    "description":"",
+    "favourite": false,
+    "price":"3.50",
+    "illustration": "http://placehold.it/100",
+    "shopify_product_name": "test product",
+    "shopify_product_handle": "test-product"
+    }
 ]
