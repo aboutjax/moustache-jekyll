@@ -7,16 +7,6 @@
     "illustration": "/assets/images/illustration-flagship.png",
     "address":"309 Karangahape Road",
     "hours": {
-      "sunday": {
-        "closed": false,
-        "open": "11am",
-        "close": "6pm"
-      },
-      "monday": {
-        "closed": true,
-        "open": "10",
-        "close": "6"
-      },
       "tuesday": {
         "closed": false,
         "open": "11am",
@@ -41,6 +31,16 @@
         "closed": false,
         "open": "11am",
         "close": "9pm"
+      },
+      "sunday": {
+        "closed": false,
+        "open": "11am",
+        "close": "6pm"
+      },
+      "monday": {
+        "closed": true,
+        "open": "10",
+        "close": "6"
       }
     }
   },
@@ -52,16 +52,6 @@
     "illustration": "/assets/images/illustration-wellington.png",
     "address":"7 Marion Street, Te Aro",
     "hours": {
-      "sunday": {
-        "closed": false,
-        "open": "10am",
-        "close": "6pm"
-      },
-      "monday": {
-        "closed": true,
-        "open": "10",
-        "close": "6"
-      },
       "tuesday": {
         "closed": false,
         "open": "10am",
@@ -86,7 +76,17 @@
         "closed": false,
         "open": "10am",
         "close": "6pm"
-      }
+      },
+      "sunday": {
+        "closed": false,
+        "open": "10am",
+        "close": "6pm"
+      },
+      "monday": {
+        "closed": true,
+        "open": "10",
+        "close": "6"
+      },
     }
   },
   {
@@ -97,16 +97,6 @@
     "illustration": "/assets/images/illustration-auckland.png",
     "address":"34 Princes Street, AU Quad",
     "hours": {
-      "sunday": {
-        "closed": true,
-        "open": "1",
-        "close": "7"
-      },
-      "monday": {
-        "closed": false,
-        "open": "10am",
-        "close": "7pm"
-      },
       "tuesday": {
         "closed": false,
         "open": "10am",
@@ -131,6 +121,16 @@
         "closed": false,
         "open": "12pm",
         "close": "6pm"
+      },
+      "sunday": {
+        "closed": true,
+        "open": "1",
+        "close": "7"
+      },
+      "monday": {
+        "closed": false,
+        "open": "10am",
+        "close": "7pm"
       }
     }
   }
