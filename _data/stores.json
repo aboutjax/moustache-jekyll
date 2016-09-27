@@ -2,45 +2,45 @@
   {
     "id":"01",
     "type":"store",
-    "name":"Auckland Uni",
-    "description":"Auckland",
-    "illustration": "/assets/images/illustration-auckland.png",
-    "address":"34 Princes Street, AU Quad",
+    "name":"Flagship Store",
+    "description":"Auckland Kroad",
+    "illustration": "/assets/images/illustration-flagship.png",
+    "address":"309 Karangahape Road",
     "hours": {
       "sunday": {
-        "closed": true,
-        "open": "1",
-        "close": "7"
+        "closed": false,
+        "open": "11am",
+        "close": "6pm"
       },
       "monday": {
-        "closed": false,
-        "open": "10am",
-        "close": "7pm"
+        "closed": true,
+        "open": "10",
+        "close": "6"
       },
       "tuesday": {
         "closed": false,
-        "open": "10am",
-        "close": "7pm"
+        "open": "11am",
+        "close": "6pm"
       },
       "wednesday": {
         "closed": false,
-        "open": "10am",
-        "close": "7pm"
+        "open": "11am",
+        "close": "9pm"
       },
       "thursday": {
         "closed": false,
-        "open": "10am",
-        "close": "7pm"
+        "open": "11am",
+        "close": "9pm"
       },
       "friday": {
         "closed": false,
-        "open": "10am",
-        "close": "7pm"
+        "open": "11am",
+        "close": "9pm"
       },
       "saturday": {
         "closed": false,
-        "open": "12pm",
-        "close": "6pm"
+        "open": "11am",
+        "close": "9pm"
       }
     }
   },
@@ -85,6 +85,51 @@
       "saturday": {
         "closed": false,
         "open": "10am",
+        "close": "6pm"
+      }
+    }
+  },
+  {
+    "id":"03",
+    "type":"store",
+    "name":"Auckland Uni",
+    "description":"Auckland",
+    "illustration": "/assets/images/illustration-auckland.png",
+    "address":"34 Princes Street, AU Quad",
+    "hours": {
+      "sunday": {
+        "closed": true,
+        "open": "1",
+        "close": "7"
+      },
+      "monday": {
+        "closed": false,
+        "open": "10am",
+        "close": "7pm"
+      },
+      "tuesday": {
+        "closed": false,
+        "open": "10am",
+        "close": "7pm"
+      },
+      "wednesday": {
+        "closed": false,
+        "open": "10am",
+        "close": "7pm"
+      },
+      "thursday": {
+        "closed": false,
+        "open": "10am",
+        "close": "7pm"
+      },
+      "friday": {
+        "closed": false,
+        "open": "10am",
+        "close": "7pm"
+      },
+      "saturday": {
+        "closed": false,
+        "open": "12pm",
         "close": "6pm"
       }
     }

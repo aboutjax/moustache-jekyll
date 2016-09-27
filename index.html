@@ -3,8 +3,6 @@ layout: default
 ---
 <div class="l-homepage-outlets l-grid-container">
 
-  {% include flagship-store.html %}
-
   {% for store in site.data.stores %}
   <div class="c-outlet-card">
     <img src="{{ store.illustration | prepend: site.url }}" class="c-outlet-card__illustration">
