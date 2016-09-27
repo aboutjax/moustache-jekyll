@@ -472,7 +472,8 @@ textarea {
           box-sizing: border-box; }
 
 body {
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  background-image: url("/assets/images/tile.png"); }
 
 html {
   font-family: 'Roboto', sans-serif; }
