@@ -118,7 +118,7 @@
         "close": "7pm"
       },
       "saturday": {
-        "closed": false,
+        "closed": true,
         "open": "12pm",
         "close": "6pm"
       },
